@@ -1,0 +1,11 @@
+defaults: {}
+
+branches:
+  - match: develop
+    realms:
+      - realm: 'totem-development'
+        proxy:
+         - host: 'spec-python.th.melt.sh'
+           paths:
+           - path: '/'
+             port: 8080
