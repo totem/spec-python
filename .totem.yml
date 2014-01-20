@@ -9,3 +9,4 @@ branches:
            paths:
            - path: '/'
              port: 8080
+        comptroller: {}
