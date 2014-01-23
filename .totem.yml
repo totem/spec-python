@@ -1,11 +1,11 @@
 defaults: {}
 
 branches:
-  - match: develop
+  - match: local-deploy
     realms:
-      - realm: 'totem-development'
+      - realm: 'local'
         proxy:
-         - host: 'spec-python.th.melt.sh'
+         - host: 'spec-python.totem.local'
            paths:
            - path: '/'
              port: 8080
