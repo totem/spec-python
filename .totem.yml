@@ -12,7 +12,7 @@ branches:
         comptroller: {}
   - match: totem-develop
     realms:
-      - realm: 'totem-development1'
+      - realm: 'totem-development'
         proxy:
          - host: 'spec-python-totem-develop.th.melt.sh'
            paths:
