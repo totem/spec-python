@@ -9,3 +9,12 @@ branches:
            paths:
            - path: '/'
              port: 8080
+             
+  - match: master
+    realms:
+      - realm: 'production'
+        proxy:
+         - host: 'spec-python.au.melt.sh'
+           paths:
+           - path: '/'
+             port: 8080
