@@ -9,7 +9,6 @@ branches:
            paths:
            - path: '/'
              port: 8080
-             
   - match: master
     realms:
       - realm: 'production'
