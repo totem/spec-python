@@ -31,7 +31,9 @@ branches:
     realms:
       - realm: 'totem-development'
         deployment-check:
-          <<: *deployment-check-defaults
+          port: 8081
+          path: '/'
+          timeout: '30s'
         proxy:
          - host: 'spec-python-totem-develop.th.melt.sh'
            paths:
