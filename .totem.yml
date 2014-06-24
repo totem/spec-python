@@ -1,6 +1,6 @@
 defaults: 
   deployment-check: &deployment-check-defaults
-    port: 8081
+    port: 8080
     path: '/'
     timeout: '30s'
     
