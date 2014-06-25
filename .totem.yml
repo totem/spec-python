@@ -1,11 +1,39 @@
-defaults: {}
-
+defaults: 
+  deployment-check: &deployment-check-defaults
+    port: 8080
+    path: '/'
+    timeout: '30s'
+    
 branches:
+  - match: master
+    realms:
+      - realm: 'production'
+        deployment-check:
+          <<: *deployment-check-defaults
+        proxy:
+         - host: 'spec-python.au.melt.sh'
+           paths:
+           - path: '/'
+             port: 8080
+        comptroller: {}
   - match: develop
     realms:
-      - realm: 'totem-development'
+      - realm: 'not-production'
+        deployment-check:
+          <<: *deployment-check-defaults
         proxy:
-         - host: 'spec-python.th.melt.sh'
+         - host: 'spec-python.cu.melt.sh'
+           paths:
+           - path: '/'
+             port: 8080
+        comptroller: {}
+  - match: totem-develop
+    realms:
+      - realm: 'totem-development'
+        deployment-check:
+          <<: *deployment-check-defaults
+        proxy:
+         - host: 'spec-python-totem-develop.th.melt.sh'
            paths:
            - path: '/'
              port: 8080
