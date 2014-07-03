@@ -1,1 +1,1 @@
-TBD 
+Spec Python project.
