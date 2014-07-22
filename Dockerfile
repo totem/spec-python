@@ -1,5 +1,5 @@
 FROM totem/python-base:2.7
-RUN exit 1
+
 ADD . /opt/spec-python
 
 EXPOSE 8080
