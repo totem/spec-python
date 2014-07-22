@@ -1,5 +1,5 @@
 FROM totem/python-base:2.7
-
+FAKE FAILURE
 ADD . /opt/spec-python
 
 EXPOSE 8080
