@@ -1,4 +1,4 @@
-FROM totem/python-base:2.7
+FROM totem/python-base:2.7-trusty
 
 ADD . /opt/spec-python
 
