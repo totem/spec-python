@@ -26,6 +26,7 @@ branches:
            paths:
            - path: '/'
              port: 8080
+             forceSsl: true
         comptroller: {}
   - match: totem-develop
     realms:
