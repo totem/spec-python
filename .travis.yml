@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+
+# commands to run tests and style check
+script:
+  - flake8 .
+
+notifications:
+  webhooks: http://sukrit008.hopto.org:23110/external/hooks/travis
