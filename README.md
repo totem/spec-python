@@ -1,1 +1,2 @@
-Spec Python project to demonstrate integration with totem.
+# Spec Python
+Project to demonstrate integration with totem.
