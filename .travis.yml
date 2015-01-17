@@ -8,4 +8,4 @@ script:
   - flake8 .
 
 notifications:
-  webhooks: http://sukrit008.hopto.org:23110/external/hooks/travis
+  webhooks: https://orchestrator.r53.us-east-1.th.melt.sh/external/hooks/travis
