@@ -18,5 +18,5 @@ httpd = SocketServer.TCPServer(("", args.port), Handler)
 
 os.chdir(args.directory)
 
-print "serving at port %d from %s" % (args.port, args.directory)
+print("serving at port %d from %s" % (args.port, args.directory))
 httpd.serve_forever()
