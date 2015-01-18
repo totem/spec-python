@@ -8,4 +8,6 @@ script:
   - flake8 .
 
 notifications:
-  webhooks: http://orchestrator.r53.us-east-1.th.melt.sh/external/hooks/travis
+  webhooks: 
+    - http://orchestrator.r53.us-east-1.th.melt.sh/external/hooks/travis
+    - http://orchestrator.r53.us-west-1.th.melt.sh/external/hooks/travis
