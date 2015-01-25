@@ -3,11 +3,12 @@ python:
   - "2.7"
   - "3.4"
 
+sudo: false
+
 # commands to run tests and style check
 script:
   - flake8 .
 
 notifications:
   webhooks: 
-    - http://orchestrator.r53.us-east-1.th.melt.sh/external/hooks/travis
     - http://orchestrator.r53.us-west-1.th.melt.sh/external/hooks/travis
