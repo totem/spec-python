@@ -30,7 +30,7 @@ branches:
         comptroller: {}
   - match: feature_demo
     realms:
-      - realm: 'totem-development'
+      - realm: 'not-production'
         deployment-check:
           <<: *deployment-check-defaults
         proxy:
