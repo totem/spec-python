@@ -28,13 +28,14 @@ branches:
              port: 8080
              forceSsl: true
         comptroller: {}
-  - match: totem-develop
+  - match: feature_demo
     realms:
       - realm: 'totem-development'
         deployment-check:
           <<: *deployment-check-defaults
         proxy:
-         - host: 'spec-python-totem-develop.th.melt.sh'
+         - host: 'certs.meltprod.com'
+           sslProfile: meltprod
            paths:
            - path: '/'
              port: 8080
